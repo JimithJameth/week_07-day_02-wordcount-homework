@@ -10,5 +10,7 @@ public class WordCountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_count);
     }
+}
+
 
 
