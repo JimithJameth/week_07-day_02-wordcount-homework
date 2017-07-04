@@ -27,6 +27,7 @@ public class WordCountActivity extends AppCompatActivity {
         word_textEditText = (EditText) findViewById(R.id.word_text);
         answerText = (TextView) findViewById(R.id.answer_text);
         wordcountButton = (Button) findViewById(button);
+    }
 
     public void WordCountButtonClicked(View button) {
         String question = word_textEditText.getText().toString();
