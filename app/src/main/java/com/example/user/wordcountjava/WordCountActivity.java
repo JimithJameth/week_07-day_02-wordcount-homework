@@ -31,8 +31,9 @@ public class WordCountActivity extends AppCompatActivity {
 
     public void WordCountButtonClicked(View button) {
         String question = word_textEditText.getText().toString();
-        Log.d(getClass().toString(), "WordCountButtonClicked was called");
+        Log.d(getClass().toString(), "wordCountButtonClicked was called");
         Log.d(getClass().toString(), "The question asked was '" + question + "'");
+
     }
 }
 
