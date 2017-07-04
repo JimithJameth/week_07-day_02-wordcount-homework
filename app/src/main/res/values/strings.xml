@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">WordCount.java</string>
     <string name="word">Please enter your sentance</string>
+    <string name="wordcount">Run Word Counter!!!</string>
 </resources>
