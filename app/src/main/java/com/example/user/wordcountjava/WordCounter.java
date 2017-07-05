@@ -5,7 +5,7 @@ package com.example.user.wordcountjava;
  */
 
 
-public class WordCount{
+public class WordCounter{
 
     public int count(String stringToCount){
         String[] arrayOfWords = stringToCount.split(" ");

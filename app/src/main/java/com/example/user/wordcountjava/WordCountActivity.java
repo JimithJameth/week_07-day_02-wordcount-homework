@@ -15,7 +15,8 @@ public class WordCountActivity extends AppCompatActivity {
 
     EditText word_textEditText;
     TextView answerText;
-    Button wordcountButton;
+    Button wordCountButton;
+    WordCounter wordCounter;
 
 
     @Override
@@ -26,13 +27,14 @@ public class WordCountActivity extends AppCompatActivity {
 
         word_textEditText = (EditText) findViewById(R.id.word_text);
         answerText = (TextView) findViewById(R.id.answer_text);
-        wordcountButton = (Button) findViewById(button);
+        wordCountButton = (Button) findViewById(button);
     }
 
     public void WordCountButtonClicked(View button) {
+        wordCounter = new WordCounter();
         String question = word_textEditText.getText().toString();
-        Log.d(getClass().toString(), "wordCountButtonClicked was called");
-        Log.d(getClass().toString(), "The question asked was '" + question + "'");
+        int answer = wordCounter.count(question);
+        answerText.setText(Integer.toString(answer));
 
     }
 }
