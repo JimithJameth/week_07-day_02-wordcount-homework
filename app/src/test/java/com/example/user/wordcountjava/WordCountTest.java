@@ -7,20 +7,20 @@ import static org.junit.Assert.*;
  * Created by user on 04/07/2017.
  */
 
-public class WordCountTest{
+public class WordCounterTest{
 
-    WordCount wordcount;
+    WordCounter wordcounter;
 
     @Before
 
     public void before(){
 
-        wordcount = new WordCount();
+        wordcounter = new WordCounter();
     }
 
     @Test
     public void haswordCount(){
-        assertEquals(4,wordcount.count("This is a string"));
+        assertEquals(4,wordcounter.count("This is a string"));
     }
  }
 
